@@ -8,7 +8,7 @@ Add the following to your `Vagrantfile`.
 ```ruby
 Vagrant::Config.run do |config|
   config.vm.box = "heroku"
-  config.vm.box_url = "https://gist.github.com/a6574dccd437ccfdec97"
+  config.vm.box_url = "https://www.dropbox.com/s/jn3w4kpn644kwwt/heroku.box"
 end
 ```
 
