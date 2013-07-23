@@ -19,7 +19,7 @@ And run `vagrant up`. The box will be downloaded and imported for you.
 You can use this Vagrantfile and vm bash script to easily have your env up and
 running:
 
-`https://gist.github.com/bff38eebbd52008553ef`
+https://gist.github.com/bff38eebbd52008553ef
 
 ## Building From Scratch
 
