@@ -25,12 +25,16 @@ class BoxTest < MiniTest::Unit::TestCase
     assert_version 'psql -c "select version();" postgres postgres; ls', '9.2.4'
   end
 
+  def test_redis_server_connection
+    assert_version 'redis-cli ping', 'PONG'
+  end
+
 private
 
   def assert_version(path, version)
     result = box.exec(path)
 
-    result.stdout.must_match %r{#{version}}
+    assert result.stdout =~ %r{#{version}}
   end
 
   def box
