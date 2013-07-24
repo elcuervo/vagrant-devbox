@@ -1,8 +1,10 @@
 This is a slightly modified version of `https://github.com/ejholmes/vagrant-heroku` adapted
 to my needs
 
-## Easy install
+## Vagrant
+Make sure you have the latest Vagrant version installed http://docs.vagrantup.com/v2/installation/
 
+## Easy install
 Add the following to your `Vagrantfile`.
 
 ```ruby
@@ -58,5 +60,5 @@ the Celadon Cedar stack.
 * Python with pip, virtualenv, and virtualenvwrapper
 * PostgreSQL 9.2.4
 * Redis
-* NodeJS 0.4.7
+* NodeJS 0.10.13
 * Foreman https://github.com/ddollar/foreman
