@@ -87,6 +87,15 @@ install_postgres() {
   su -c 'createuser vagrant -s' postgres
 }
 
+install_phantomjs() {
+  msg "Install PhantomJS"
+  wget https://phantomjs.googlecode.com/files/phantomjs-1.9.1-linux-x86_64.tar.bz2
+  tar xfj phantom*
+  mv phantomjs-1.9.1-linux-x86_64/bin/phantomjs /usr/bin
+  chown vagrant:vagrant /usr/bin/phantomjs
+  rm -rf phantomjs*
+}
+
 install_redis() {
   msg "Install redis-server"
   useradd -p redis redis

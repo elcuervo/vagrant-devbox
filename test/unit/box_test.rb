@@ -14,7 +14,11 @@ class BoxTest < MiniTest::Unit::TestCase
   end
 
   def test_nodejs_version
-    assert_version 'node -v', '0.4.7'
+    assert_version 'node -v', '0.10.13'
+  end
+
+  def test_phantomjs_version
+    assert_version 'phantom -v', '1.9'
   end
 
   def test_postgresql_version

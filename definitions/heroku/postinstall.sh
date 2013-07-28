@@ -12,6 +12,7 @@ install_ruby_and_rubygems
 install_python_and_virtualenv
 install_node_and_npm
 
+install_phantomjs
 install_postgres
 install_redis
 

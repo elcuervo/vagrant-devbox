@@ -10,8 +10,8 @@ basic_libraries() {
   apt-get -y upgrade
   apt-get -y install linux-headers-$(uname -r) build-essential
   apt-get -y install zlib1g-dev libssl-dev libreadline5-dev
-  apt-get -y install git-core vim
-  apt-get -y install libyaml-dev
+  apt-get -y install git-core vim libfontconfig1-dev
+  apt-get -y install libyaml-dev chrpath
 
   msg "Apt-install python tools and libraries libpq-dev lets us compile psycopg for Postgres"
   apt-get -y install python-setuptools python-dev libpq-dev pep8
