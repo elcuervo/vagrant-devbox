@@ -9,8 +9,8 @@ Add the following to your `Vagrantfile`.
 
 ```ruby
 Vagrant::Config.run do |config|
-  config.vm.box = "heroku"
-  config.vm.box_url = "https://www.dropbox.com/s/jn3w4kpn644kwwt/heroku.box"
+  config.vm.box = "devbox"
+  config.vm.box_url = "https://www.dropbox.com/s/jn3w4kpn644kwwt/devbox.box"
 end
 ```
 
@@ -28,8 +28,8 @@ https://gist.github.com/bff38eebbd52008553ef
 First, clone the repo and install gems with bundler.
 
 ```bash
-$ git clone git@github.com:elcuervo/vagrant-heroku.git
-$ cd vagrant-heroku
+$ git clone git@github.com:elcuervo/vagrant-devbox.git
+$ cd vagrant-devbox
 $ bundle install
 ```
 
@@ -37,14 +37,14 @@ Next, build the box with veewee. Go grab a cup of coffee because this is gonna
 take a while.
 
 ```bash
-$ bundle exec veewee vbox export heroku
-$ vagrant box add heroku heroku.box
+$ bundle exec veewee vbox export devbox
+$ vagrant box add devbox devbox.box
 ```
 
 Now all you have to do is setup vagrant in your project.
 
 ```bash
-$ vagrant init heroku
+$ vagrant init devbox
 $ vagrant up
 $ vagrant ssh
 ```
