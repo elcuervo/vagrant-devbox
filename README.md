@@ -54,6 +54,7 @@ $ vagrant ssh
 The packages that are included are carefully selected to closely match those on
 the Celadon Cedar stack.
 
+* ZSH and autoexport to .env files
 * Ubuntu 10.04 64bit
 * Ruby 1.9.3-p392 MRI
 * RubyGems 1.8.23

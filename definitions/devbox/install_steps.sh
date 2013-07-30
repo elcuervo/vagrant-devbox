@@ -1,3 +1,16 @@
+install_zsh_and_autoenv_script() {
+  msg "Installs ZSH and sets it as the default shell"
+  apt-get install zsh
+  chsh -s /bin/zsh vagrant
+  su -c 'cat >> ~/.zshrc << EOF
+  # Autoload .env files
+  load_env_file() { if [ -f ".env" ]; then export \$(grep -v "#" .env); fi; }
+  # Load for .env files when changing dir
+  chpwd() { load_env_file }
+  load_env_file
+EOF' vagrant
+}
+
 install_ruby_and_rubygems() {
   msg "Install Ruby from source in /opt so that users of Vagrant can install their own Rubies using packages or however."
   wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p392.tar.bz2

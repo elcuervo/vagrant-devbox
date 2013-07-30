@@ -8,6 +8,7 @@ date > /etc/vagrant_box_build_time
 basic_libraries
 basic_user_config
 
+install_zsh_and_autoenv_script
 install_ruby_and_rubygems
 install_python_and_virtualenv
 install_node_and_npm
