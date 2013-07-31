@@ -62,5 +62,5 @@ the Celadon Cedar stack.
 * PostgreSQL 9.2.4
 * Redis
 * NodeJS 0.10.13
-* PhanonJS 1.9.1
+* PhantomJS 1.9.1
 * Foreman https://github.com/ddollar/foreman
