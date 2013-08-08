@@ -10,7 +10,7 @@ Add the following to your `Vagrantfile`.
 ```ruby
 Vagrant::Config.run do |config|
   config.vm.box = "devbox"
-  config.vm.box_url = "https://www.dropbox.com/s/wohgacyjww7518t/devbox.box"
+  config.vm.box_url = "https://dl.dropboxusercontent.com/s/wohgacyjww7518t/devbox.box?token_hash=AAGFbluNsITN0_pijsvmS7DiKI8qhFHa6FlGOsuvFeIo8w&dl=1"
 end
 ```
 
