@@ -8,6 +8,7 @@ install_zsh_and_autoenv_script() {
   # Load for .env files when changing dir
   chpwd() { load_env_file }
   load_env_file
+  export PATH=$PATH:/opt/ruby/bin/
 EOF' vagrant
 }
 
@@ -53,9 +54,9 @@ install_python_and_virtualenv() {
   pip install virtualenv
   pip install virtualenvwrapper
 
-  msg "Add a basic virtualenvwrapper config to .bashrc"
-  echo "export WORKON_HOME=/home/vagrant/.virtualenvs" >> /home/vagrant/.bashrc
-  echo "source /usr/local/bin/virtualenvwrapper.sh" >> /home/vagrant/.bashrc
+  msg "Add a basic virtualenvwrapper config to .zshrc"
+  echo "export WORKON_HOME=/home/vagrant/.virtualenvs" >> /home/vagrant/.zshrc
+  echo "source /usr/local/bin/virtualenvwrapper.sh" >> /home/vagrant/.zshrc
 }
 
 install_node_and_npm() {
